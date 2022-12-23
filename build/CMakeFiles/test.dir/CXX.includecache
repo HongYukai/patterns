@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hongyk/patterns/lib/factory_method.h
+memory
+-
+
+/home/hongyk/patterns/lib/single.h
+mutex
+-
+
+/home/hongyk/patterns/main.cpp
+iostream
+-
+lib/single.h
+/home/hongyk/patterns/lib/single.h
+lib/factory_method.h
+/home/hongyk/patterns/lib/factory_method.h
+
