@@ -4,7 +4,7 @@
 
 #include "single.h"
 
-//! LAZY_MODE
+//! LAZY_MODE_1
 //Singleton::Singleton* singleton = nullptr;
 
 //! HUBGRY_MODE

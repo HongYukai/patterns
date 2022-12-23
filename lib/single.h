@@ -6,6 +6,8 @@
 #ifndef PATTERNS_SINGLE_H
 #define PATTERNS_SINGLE_H
 
+//! HUNGRY_MODE is definitely thread safe, but LAZY_MODE_1 is thread unsafe
+
 //! HUNGRY_MODE, avoid the thread safety problem compared to LAZY_MODE
 class Singleton {
 private:
