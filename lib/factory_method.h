@@ -7,14 +7,14 @@
 
 #include <memory>
 
-//! abstract base class
+//! Abstract base class
 class Shape {
 public:
     virtual void draw() = 0;
     virtual ~Shape() {}
 };
 
-//! concrete class
+//! Concrete class
 class Rect : public Shape {
 public:
     virtual void draw() {
@@ -22,7 +22,7 @@ public:
     }
 };
 
-//! concrete class
+//! Concrete class
 class Line : public Shape {
 public:
     virtual void draw() {
@@ -30,14 +30,14 @@ public:
     }
 };
 
-//! base factory class
+//! Base factory class
 class ShapeFactory {
 public:
     virtual std::shared_ptr<Shape> GetShape() = 0;
     virtual ~ShapeFactory() {}
 };
 
-//! concrete factory class
+//! Concrete factory class
 class RectFactory : public ShapeFactory {
 public:
     virtual std::shared_ptr<Shape> GetShape() {
@@ -45,7 +45,7 @@ public:
     }
 };
 
-//! concrete factory class
+//! Concrete factory class
 class LineFactory : public ShapeFactory {
 public:
     virtual std::shared_ptr<Shape> GetShape() {
