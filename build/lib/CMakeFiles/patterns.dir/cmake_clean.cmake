@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/patterns.dir/factory_method.cpp.o"
   "CMakeFiles/patterns.dir/single.cpp.o"
   "libpatterns.a"
   "libpatterns.pdb"

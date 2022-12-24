@@ -125,33 +125,6 @@ patterns/fast:
 	cd /home/hongyk/patterns/build && $(MAKE) -f lib/CMakeFiles/patterns.dir/build.make lib/CMakeFiles/patterns.dir/build
 .PHONY : patterns/fast
 
-factory_method.o: factory_method.cpp.o
-
-.PHONY : factory_method.o
-
-# target to build an object file
-factory_method.cpp.o:
-	cd /home/hongyk/patterns/build && $(MAKE) -f lib/CMakeFiles/patterns.dir/build.make lib/CMakeFiles/patterns.dir/factory_method.cpp.o
-.PHONY : factory_method.cpp.o
-
-factory_method.i: factory_method.cpp.i
-
-.PHONY : factory_method.i
-
-# target to preprocess a source file
-factory_method.cpp.i:
-	cd /home/hongyk/patterns/build && $(MAKE) -f lib/CMakeFiles/patterns.dir/build.make lib/CMakeFiles/patterns.dir/factory_method.cpp.i
-.PHONY : factory_method.cpp.i
-
-factory_method.s: factory_method.cpp.s
-
-.PHONY : factory_method.s
-
-# target to generate assembly for a file
-factory_method.cpp.s:
-	cd /home/hongyk/patterns/build && $(MAKE) -f lib/CMakeFiles/patterns.dir/build.make lib/CMakeFiles/patterns.dir/factory_method.cpp.s
-.PHONY : factory_method.cpp.s
-
 single.o: single.cpp.o
 
 .PHONY : single.o
@@ -188,9 +161,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... patterns"
-	@echo "... factory_method.o"
-	@echo "... factory_method.i"
-	@echo "... factory_method.s"
 	@echo "... single.o"
 	@echo "... single.i"
 	@echo "... single.s"

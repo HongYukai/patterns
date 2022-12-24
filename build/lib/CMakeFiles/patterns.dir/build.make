@@ -57,22 +57,9 @@ include lib/CMakeFiles/patterns.dir/progress.make
 # Include the compile flags for this target's objects.
 include lib/CMakeFiles/patterns.dir/flags.make
 
-lib/CMakeFiles/patterns.dir/factory_method.cpp.o: lib/CMakeFiles/patterns.dir/flags.make
-lib/CMakeFiles/patterns.dir/factory_method.cpp.o: ../lib/factory_method.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hongyk/patterns/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/patterns.dir/factory_method.cpp.o"
-	cd /home/hongyk/patterns/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/patterns.dir/factory_method.cpp.o -c /home/hongyk/patterns/lib/factory_method.cpp
-
-lib/CMakeFiles/patterns.dir/factory_method.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/patterns.dir/factory_method.cpp.i"
-	cd /home/hongyk/patterns/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hongyk/patterns/lib/factory_method.cpp > CMakeFiles/patterns.dir/factory_method.cpp.i
-
-lib/CMakeFiles/patterns.dir/factory_method.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/patterns.dir/factory_method.cpp.s"
-	cd /home/hongyk/patterns/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hongyk/patterns/lib/factory_method.cpp -o CMakeFiles/patterns.dir/factory_method.cpp.s
-
 lib/CMakeFiles/patterns.dir/single.cpp.o: lib/CMakeFiles/patterns.dir/flags.make
 lib/CMakeFiles/patterns.dir/single.cpp.o: ../lib/single.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hongyk/patterns/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/patterns.dir/single.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hongyk/patterns/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/patterns.dir/single.cpp.o"
 	cd /home/hongyk/patterns/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/patterns.dir/single.cpp.o -c /home/hongyk/patterns/lib/single.cpp
 
 lib/CMakeFiles/patterns.dir/single.cpp.i: cmake_force
@@ -85,17 +72,15 @@ lib/CMakeFiles/patterns.dir/single.cpp.s: cmake_force
 
 # Object files for target patterns
 patterns_OBJECTS = \
-"CMakeFiles/patterns.dir/factory_method.cpp.o" \
 "CMakeFiles/patterns.dir/single.cpp.o"
 
 # External object files for target patterns
 patterns_EXTERNAL_OBJECTS =
 
-lib/libpatterns.a: lib/CMakeFiles/patterns.dir/factory_method.cpp.o
 lib/libpatterns.a: lib/CMakeFiles/patterns.dir/single.cpp.o
 lib/libpatterns.a: lib/CMakeFiles/patterns.dir/build.make
 lib/libpatterns.a: lib/CMakeFiles/patterns.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hongyk/patterns/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libpatterns.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hongyk/patterns/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libpatterns.a"
 	cd /home/hongyk/patterns/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/patterns.dir/cmake_clean_target.cmake
 	cd /home/hongyk/patterns/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/patterns.dir/link.txt --verbose=$(VERBOSE)
 

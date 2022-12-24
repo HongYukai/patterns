@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hongyk/patterns/lib/factory_method.h
+/home/hongyk/patterns/lib/factory.h
 memory
 -
 
@@ -19,6 +19,6 @@ iostream
 -
 lib/single.h
 /home/hongyk/patterns/lib/single.h
-lib/factory_method.h
-/home/hongyk/patterns/lib/factory_method.h
+lib/factory.h
+/home/hongyk/patterns/lib/factory.h
 

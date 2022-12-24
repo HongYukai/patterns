@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hongyk/patterns/lib/factory_method.cpp" "/home/hongyk/patterns/build/lib/CMakeFiles/patterns.dir/factory_method.cpp.o"
   "/home/hongyk/patterns/lib/single.cpp" "/home/hongyk/patterns/build/lib/CMakeFiles/patterns.dir/single.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

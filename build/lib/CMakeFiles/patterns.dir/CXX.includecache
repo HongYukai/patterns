@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/hongyk/patterns/lib/factory_method.cpp
-
 /home/hongyk/patterns/lib/single.cpp
 single.h
 /home/hongyk/patterns/lib/single.h
