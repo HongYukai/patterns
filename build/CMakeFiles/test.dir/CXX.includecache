@@ -10,6 +10,10 @@
 memory
 -
 
+/home/hongyk/patterns/lib/prototype.h
+memory
+-
+
 /home/hongyk/patterns/lib/single.h
 mutex
 -
@@ -21,4 +25,6 @@ lib/single.h
 /home/hongyk/patterns/lib/single.h
 lib/factory.h
 /home/hongyk/patterns/lib/factory.h
+lib/prototype.h
+/home/hongyk/patterns/lib/prototype.h
 
