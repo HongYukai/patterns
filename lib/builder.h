@@ -8,7 +8,7 @@
 class House {
 public:
     virtual ~House() {}
-    void init() {
+    virtual void init() final {
         this->buildCeilings();
         this->buildDoors();
         this->buildWalls();
@@ -38,7 +38,7 @@ private:
         printf("Building stone windows...\n");
     }
     void buildComplete() override {
-        printf("Stone house is built...\n");
+        printf("Stone house is built\n");
     }
 };
 
@@ -57,7 +57,7 @@ private:
         printf("Building crystal windows...\n");
     }
     void buildComplete() override {
-        printf("Crystal house is built...\n");
+        printf("Crystal house is built\n");
     }
 };
 
