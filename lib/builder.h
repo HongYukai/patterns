@@ -8,6 +8,8 @@
 class House {
 public:
     virtual ~House() {}
+    //! The base class fix the composition of virtual methods, subclass will inherit this composition
+    //! and override above virtual methods
     virtual void init() final {
         this->buildCeilings();
         this->buildDoors();
