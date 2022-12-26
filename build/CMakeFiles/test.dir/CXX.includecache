@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/hongyk/patterns/lib/builder.h
+
 /home/hongyk/patterns/lib/factory.h
 memory
 -
@@ -27,4 +29,6 @@ lib/factory.h
 /home/hongyk/patterns/lib/factory.h
 lib/prototype.h
 /home/hongyk/patterns/lib/prototype.h
+lib/builder.h
+/home/hongyk/patterns/lib/builder.h
 

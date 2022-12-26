@@ -2,6 +2,7 @@
 #include "lib/single.h"
 #include "lib/factory.h"
 #include "lib/prototype.h"
+#include "lib/builder.h"
 
 using namespace std;
 
@@ -37,9 +38,9 @@ class PrototypeTest {
 private:
     shared_ptr<Car> car_;
 public:
-    PrototypeTest(shared_ptr<Car> car) : car_(car) {}
+    PrototypeTest(shared_ptr<Car> car) : car_(car->clone()) {}
     void setCar(shared_ptr<Car> car) {
-        car_ = car;
+        car_ = car->clone();
     }
     void test() {
         car_->hello();
@@ -57,9 +58,15 @@ int main() {
 //    factoryTest.test1();
 //    factoryTest.test2();
 //    factoryTest.test3();
-    PrototypeTest prototypeTest(make_shared<Benz>());
-    prototypeTest.test();
-    prototypeTest.setCar(make_shared<Panamera>());
-    prototypeTest.test();
+//    PrototypeTest prototypeTest(make_shared<Benz>());
+//    prototypeTest.test();
+//    prototypeTest.setCar(make_shared<Panamera>());
+//    prototypeTest.test();
+    House *house = new StoneHouse();
+    house->init();
+    delete house;
+    house = new CrystalHouse();
+    house->init();
+    delete house;
     return 0;
 }
