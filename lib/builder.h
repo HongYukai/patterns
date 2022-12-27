@@ -8,16 +8,22 @@
 class House {
 public:
     virtual ~House() {}
-    //! The base class fix the composition of virtual methods, subclass will inherit this composition
-    //! and override above virtual methods
+    //! The base class fix the composition (stable) of virtual methods or non-virtual methods,
+    //! subclass will inherit this composition and override above virtual methods (volatile)
     virtual void init() final {
+        this->BuildStarted();
         this->buildCeilings();
         this->buildDoors();
         this->buildWalls();
         this->buildWindows();
         this->buildComplete();
     }
-private:
+    //! non-virtual methods prefer to be set to protected to be called by subclass and avoid being
+    //! called by others alone. virtual method can be protected or private.
+protected:
+    void BuildStarted() {
+        printf("Guess what is building now...\n");
+    }
     virtual void buildCeilings() = 0;
     virtual void buildWalls() = 0;
     virtual void buildDoors() = 0;
