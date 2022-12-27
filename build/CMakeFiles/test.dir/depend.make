@@ -3,6 +3,7 @@
 
 CMakeFiles/test.dir/main.cpp.o: ../lib/builder.h
 CMakeFiles/test.dir/main.cpp.o: ../lib/factory.h
+CMakeFiles/test.dir/main.cpp.o: ../lib/flyweight.h
 CMakeFiles/test.dir/main.cpp.o: ../lib/prototype.h
 CMakeFiles/test.dir/main.cpp.o: ../lib/single.h
 CMakeFiles/test.dir/main.cpp.o: ../main.cpp

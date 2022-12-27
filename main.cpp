@@ -3,6 +3,7 @@
 #include "lib/factory.h"
 #include "lib/prototype.h"
 #include "lib/builder.h"
+#include "lib/flyweight.h"
 
 using namespace std;
 
@@ -62,11 +63,15 @@ int main() {
 //    prototypeTest.test();
 //    prototypeTest.setCar(make_shared<Panamera>());
 //    prototypeTest.test();
-    House *house = new StoneHouse();
-    house->init();
-    delete house;
-    house = new CrystalHouse();
-    house->init();
-    delete house;
+//    House *house = new StoneHouse();
+//    house->init();
+//    delete house;
+//    house = new CrystalHouse();
+//    house->init();
+//    delete house;
+    const Font* font1 = FontFactory::GetFont("dni");
+    font1->hello();
+    const Font* font2 = FontFactory::GetFont("dni");
+    font2->hello();
     return 0;
 }

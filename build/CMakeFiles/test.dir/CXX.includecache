@@ -12,6 +12,12 @@
 memory
 -
 
+/home/hongyk/patterns/lib/flyweight.h
+string
+-
+map
+-
+
 /home/hongyk/patterns/lib/prototype.h
 memory
 -
@@ -31,4 +37,6 @@ lib/prototype.h
 /home/hongyk/patterns/lib/prototype.h
 lib/builder.h
 /home/hongyk/patterns/lib/builder.h
+lib/flyweight.h
+/home/hongyk/patterns/lib/flyweight.h
 
