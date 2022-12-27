@@ -16,7 +16,6 @@ public:
     void hello() const {
         printf("%p\n", this);
     }
-    int i = 0;
 };
 
 class FontFactory {
