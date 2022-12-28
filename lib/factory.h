@@ -83,4 +83,32 @@ public:
     }
 };
 
+//! utilize class
+class FactoryTest {
+    std::shared_ptr<ISDFactory> isdFactory_;
+public:
+    FactoryTest(std::shared_ptr<ISDFactory> isdFactory) : isdFactory_(isdFactory){}
+    void setFactory(std::shared_ptr<ISDFactory> isdFactory) {
+        this->isdFactory_ = isdFactory;
+    }
+    void test1() {
+        auto shape = isdFactory_->GetShape();
+        auto delivery = isdFactory_->GetDelivery();
+        shape->draw();
+        delivery->deliver();
+    }
+    void test2() {
+        auto shape = isdFactory_->GetShape();
+        auto delivery = isdFactory_->GetDelivery();
+        shape->draw();
+        delivery->deliver();
+    }
+    void test3() {
+        auto shape = isdFactory_->GetShape();
+        auto delivery = isdFactory_->GetDelivery();
+        shape->draw();
+        delivery->deliver();
+    }
+};
+
 #endif //PATTERNS_FACTORY_METHOD_H

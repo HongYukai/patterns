@@ -26,6 +26,10 @@ memory
 mutex
 -
 
+/home/hongyk/patterns/lib/strategy.h
+memory
+-
+
 /home/hongyk/patterns/main.cpp
 iostream
 -
@@ -39,4 +43,6 @@ lib/builder.h
 /home/hongyk/patterns/lib/builder.h
 lib/flyweight.h
 /home/hongyk/patterns/lib/flyweight.h
+lib/strategy.h
+/home/hongyk/patterns/lib/strategy.h
 

@@ -36,4 +36,17 @@ public:
     }
 };
 
+class PrototypeTest {
+private:
+    std::shared_ptr<Car> car_;
+public:
+    PrototypeTest(std::shared_ptr<Car> car) : car_(car->clone()) {}
+    void setCar(std::shared_ptr<Car> car) {
+        car_ = car->clone();
+    }
+    void test() {
+        car_->hello();
+    }
+};
+
 #endif //PATTERNS_PROTOTYPE_H

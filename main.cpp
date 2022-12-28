@@ -4,49 +4,9 @@
 #include "lib/prototype.h"
 #include "lib/builder.h"
 #include "lib/flyweight.h"
+#include "lib/strategy.h"
 
 using namespace std;
-
-//! utilize class
-class FactoryTest {
-    std::shared_ptr<ISDFactory> isdFactory_;
-public:
-    FactoryTest(std::shared_ptr<ISDFactory> isdFactory) : isdFactory_(isdFactory){}
-    void setFactory(std::shared_ptr<ISDFactory> isdFactory) {
-        this->isdFactory_ = isdFactory;
-    }
-    void test1() {
-        auto shape = isdFactory_->GetShape();
-        auto delivery = isdFactory_->GetDelivery();
-        shape->draw();
-        delivery->deliver();
-    }
-    void test2() {
-        auto shape = isdFactory_->GetShape();
-        auto delivery = isdFactory_->GetDelivery();
-        shape->draw();
-        delivery->deliver();
-    }
-    void test3() {
-        auto shape = isdFactory_->GetShape();
-        auto delivery = isdFactory_->GetDelivery();
-        shape->draw();
-        delivery->deliver();
-    }
-};
-
-class PrototypeTest {
-private:
-    shared_ptr<Car> car_;
-public:
-    PrototypeTest(shared_ptr<Car> car) : car_(car->clone()) {}
-    void setCar(shared_ptr<Car> car) {
-        car_ = car->clone();
-    }
-    void test() {
-        car_->hello();
-    }
-};
 
 int main() {
 //    cout << Singleton::getInstance() << endl;
@@ -69,9 +29,13 @@ int main() {
 //    house = new CrystalHouse();
 //    house->init();
 //    delete house;
-    const Font* font1 = FontFactory::GetFont("dni");
-    font1->hello();
-    const Font* font2 = FontFactory::GetFont("dni");
-    font2->hello();
+//    const Font* font1 = FontFactory::GetFont("dni");
+//    font1->hello();
+//    const Font* font2 = FontFactory::GetFont("dni");
+//    font2->hello();
+    TaxExecutor taxExecutor(make_shared<CNStrategyFactory>());
+    cout << taxExecutor.execute() << endl;
+    taxExecutor.setStrategy(make_shared<UKStrategyFactory>());
+    cout << taxExecutor.execute() << endl;
     return 0;
 }

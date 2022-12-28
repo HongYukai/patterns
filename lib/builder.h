@@ -5,6 +5,8 @@
 #ifndef PATTERNS_BUILDER_H
 #define PATTERNS_BUILDER_H
 
+//! same as template method
+
 class House {
 public:
     virtual ~House() {}
