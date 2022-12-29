@@ -18,6 +18,14 @@ string
 map
 -
 
+/home/hongyk/patterns/lib/observer.h
+memory
+-
+vector
+-
+algorithm
+-
+
 /home/hongyk/patterns/lib/prototype.h
 memory
 -
@@ -45,4 +53,6 @@ lib/flyweight.h
 /home/hongyk/patterns/lib/flyweight.h
 lib/strategy.h
 /home/hongyk/patterns/lib/strategy.h
+lib/observer.h
+/home/hongyk/patterns/lib/observer.h
 
